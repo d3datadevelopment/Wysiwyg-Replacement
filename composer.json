@@ -7,6 +7,6 @@
   },
   "replace": {
     "ddoe/wysiwyg-editor-module": "*",
-    "ddoe/visualcms-module": "*",
+    "ddoe/visualcms-module": "*"
   }
 }
