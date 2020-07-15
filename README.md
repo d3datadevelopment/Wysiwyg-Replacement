@@ -12,6 +12,16 @@ if the WYSIWYG + VisualCMS modules are not used and should be removed from the s
     `composer require d3/oxid-wysiwyg-replacement --update-no-dev`
     
 * Manually remove the files from source/modules/ddoe/visualcms and source/modules/ddoe/wysiwyg.
+* OXID eShop 6.2 only:
+
+    ```
+    composer require -n oxid-esales/oxideshop-update-component oxid-esales/developer-tools --update-no-dev
+    vendor/bin/oe-console oe:module:reset-configurations
+    vendor/bin/oe-console oe:oxideshop-update-component:install-all-modules
+    composer remove -n oxid-esales/oxideshop-update-component oxid-esales/developer-tools --update-no-dev
+    ```
+    
+    Please ignore "not readable file" message.
 
 ## Uninstall
 
